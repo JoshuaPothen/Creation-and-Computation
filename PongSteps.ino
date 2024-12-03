@@ -236,7 +236,6 @@ void processDistance() {
       float change = smoothedDistance - lastSmoothedDistance;
       totalMotion += abs(change);
       
-      /*
       // Print verbose status
       Serial.print("Raw Distance: ");
       Serial.print(distance);
@@ -263,7 +262,7 @@ void processDistance() {
       Serial.print("Total Motion: ");
       Serial.print(totalMotion);
       Serial.println(" cm");
-      */
+      
     }
     lastReadTime = currentTime;
   }
@@ -288,7 +287,6 @@ void processDistance2() {
       // Calculate motion
       float change2 = smoothedDistance2 - lastSmoothedDistance2;
       totalMotion2 += abs(change2);
-      /*
       // Print verbose status
       Serial.print("Raw Distance2: ");
       Serial.print(distance2);
@@ -315,7 +313,6 @@ void processDistance2() {
       Serial.print("Total Motion2: ");
       Serial.print(totalMotion2);
       Serial.println(" cm");
-      */
     }
     lastReadTime2 = currentTime3;
   }
